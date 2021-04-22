@@ -36,21 +36,18 @@
 import PackageDescription
 
 let package = Package(
-  name: "CalendarControl",
-  platforms: [
-    .macOS(.v10_15), .iOS(.v14), .tvOS(.v14)
-  ],
-  products: [
-    .library(
-        name: "CalendarControl",
-        targets: ["CalendarControl"]),
-  ],
-    dependencies: [
-      .package(url: "https://github.com/st-lamle/CalendarControl", from: "1.0.0"),
+    name: "CalendarControl",
+    platforms: [
+        .macOS(.v10_15), .iOS(.v14), .tvOS(.v14)
     ],
-  targets: [
-    .binaryTarget(
-      name: "CalendarControl",
-      path: "./Sources/CalendarControl.xcframework")
-  ]
+    products: [
+        .library(
+            name: "CalendarControl",
+            targets: ["CalendarControl"]),
+    ],
+    targets: [
+        .binaryTarget(
+            name: "CalendarControl",
+            path: "./Sources/CalendarControl.xcframework")
+    ]
 )
