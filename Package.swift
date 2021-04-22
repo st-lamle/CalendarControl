@@ -45,6 +45,9 @@ let package = Package(
         name: "CalendarControl",
         targets: ["CalendarControl"]),
   ],
+    dependencies: [
+      .package(url: "https://github.com/st-lamle/CalendarControl", from: "1.0.0"),
+    ]
   targets: [
     .binaryTarget(
       name: "CalendarControl",
